@@ -2,9 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
+import { AppThemeProvider } from './core/theme/utils/themes/ThemeProvider.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <AppThemeProvider>
+      <App />
+    </AppThemeProvider>
+
   </StrictMode>,
 )

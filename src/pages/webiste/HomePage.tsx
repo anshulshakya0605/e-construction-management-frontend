@@ -9,6 +9,9 @@ export default function HomePage() {
         Manage construction projects, teams, materials and operations
         from one centralized platform.
       </p>
+      <h1 className="text-4xl font-bold text-blue-600">
+  Tailwind is working
+</h1>
     </section>
   );
 }

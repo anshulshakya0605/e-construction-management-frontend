@@ -8,6 +8,7 @@ import AboutPage from "../pages/webiste/AboutPage";
 import ContactPage from "../pages/webiste/ContactPage";
 import ProjectsPage from "../pages/webiste/ProjectsPage";
 import TestimonialsPage from "../pages/testimonials/TestimonialPage";
+import FAQPage from "../pages/FAQ/Faq";
 
 
 
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "contact", element: <ContactPage /> },
       { path: "about", element: <AboutPage /> },
       { path: "testimonials", element: <TestimonialsPage /> },
+      { path: "faq", element: <FAQPage /> },
     ],
   },
   {

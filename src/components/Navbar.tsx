@@ -8,6 +8,7 @@ const links = [
   { label: "Projects", path: "/projects" },
   { label: "Contact", path: "/contact" },
   { label: "Testimonials", path: "/testimonials" },
+  { label: "FAQ", path: "/faq" },
 ];
 
 export default function Navbar() {

@@ -1,0 +1,95 @@
+import type { Testimonial } from "./TestimonialTypes";
+
+export const testimonialData: Testimonial[] = [
+  {
+    id: 1,
+    clientName: "Rahul Sharma",
+    designation: "Project Director",
+    company: "Urban Build Developers",
+    projectName: "Luxury Residential Complex",
+    category: "HOME",
+    rating: 5,
+    feedback:
+      "The platform provides excellent project visibility. Managing construction activities, tracking progress and coordinating teams has become much easier.",
+    date: "2026-09-15",
+    verified: true,
+  },
+  {
+    id: 2,
+    clientName: "Priya Verma",
+    designation: "Infrastructure Manager",
+    company: "EduSpace Group",
+    projectName: "Modern School Campus",
+    category: "SCHOOL",
+    rating: 5,
+    feedback:
+      "A well-organized platform for managing construction projects. It helps our team monitor project activities and maintain better coordination.",
+    date: "2026-09-10",
+    verified: true,
+  },
+  {
+    id: 3,
+    clientName: "Amit Kumar",
+    designation: "Operations Head",
+    company: "CareBuild Infrastructure",
+    projectName: "Multi-Speciality Hospital",
+    category: "HOSPITAL",
+    rating: 4,
+    feedback:
+      "Project monitoring and task management are much more convenient. The centralized information helps us stay updated on project progress.",
+    date: "2026-08-22",
+    verified: true,
+  },
+  {
+    id: 4,
+    clientName: "Neha Kapoor",
+    designation: "Development Manager",
+    company: "GrandStay Projects",
+    projectName: "Premium Business Hotel",
+    category: "HOTEL",
+    rating: 5,
+    feedback:
+      "The dashboard provides a clear overview of project activities. It has improved our communication and overall project management workflow.",
+    date: "2026-08-15",
+    verified: true,
+  },
+  {
+    id: 5,
+    clientName: "Vikram Singh",
+    designation: "Project Consultant",
+    company: "NextGen Estates",
+    projectName: "Luxury Villa Project",
+    category: "VILLA",
+    rating: 5,
+    feedback:
+      "An effective solution for managing construction operations. We can easily review project updates and keep track of important milestones.",
+    date: "2026-07-28",
+    verified: true,
+  },
+  {
+    id: 6,
+    clientName: "Ananya Gupta",
+    designation: "Facilities Manager",
+    company: "Apex Business Solutions",
+    projectName: "Corporate Office Building",
+    category: "PRIVATE_COMPANY",
+    rating: 4,
+    feedback:
+      "The centralized project management system makes it easier to coordinate stakeholders and organize project information.",
+    date: "2026-07-12",
+    verified: true,
+  },
+  {
+    id: 7,
+    clientName: "Karan Malhotra",
+    designation: "Campus Development Head",
+    company: "FutureLearn Group",
+    projectName: "Higher Education Campus",
+    category: "COLLEGE",
+    rating: 5,
+    feedback:
+      "A simple and useful platform for managing large construction projects. Our team can access project updates and coordinate activities efficiently.",
+    date: "2026-06-25",
+    verified: true,
+  },
+];

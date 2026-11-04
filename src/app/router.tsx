@@ -7,6 +7,7 @@ import NotFoundPage from "../pages/NotFoundPage";
 import AboutPage from "../pages/webiste/AboutPage";
 import ContactPage from "../pages/webiste/ContactPage";
 import ProjectsPage from "../pages/webiste/ProjectsPage";
+import DashboardHome from "../pages/dashboard/DashboardHome";
 import TestimonialsPage from "../pages/testimonials/TestimonialPage";
 
 
@@ -29,6 +30,11 @@ export const router = createBrowserRouter([
     path: "/login",
     element: <LoginPage />,
   },
+  {
+    path: "/dashboard",
+    element: <DashboardHome />,
+  }
+  ,
   {
     path: "*",
     element: <NotFoundPage />,

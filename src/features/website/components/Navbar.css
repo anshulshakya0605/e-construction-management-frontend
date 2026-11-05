@@ -1,0 +1,43 @@
+
+/* Glassmorphism navbar */
+.navbar-glass {
+  background: color-mix(
+    in srgb,
+    var(--app-surface) 82%,
+    transparent
+  );
+
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Mobile menu animation */
+.mobile-navbar-panel {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    max-height 0.3s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.mobile-navbar-panel.mobile-navbar-open {
+  max-height: 600px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-glass,
+  .mobile-navbar-panel {
+    transition: none;
+  }
+}

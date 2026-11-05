@@ -1,0 +1,87 @@
+
+/* Image overlay: keeps white hero text readable */
+.hero-image-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      rgb(15 23 42 / 82%) 0%,
+      rgb(15 23 42 / 62%) 45%,
+      rgb(15 23 42 / 20%) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgb(15 23 42 / 35%) 0%,
+      transparent 45%
+    );
+}
+
+/* Theme-aware glass effect */
+.hero-glass {
+  background: color-mix(
+    in srgb,
+    var(--app-surface) 86%,
+    transparent
+  );
+
+  border: 1px solid color-mix(
+    in srgb,
+    var(--app-border) 75%,
+    transparent
+  );
+
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+
+  box-shadow: 0 12px 40px rgb(15 23 42 / 12%);
+}
+
+/* Dark theme glass */
+.dark .hero-glass {
+  background: color-mix(
+    in srgb,
+    var(--app-surface) 82%,
+    transparent
+  );
+
+  border-color: rgb(148 163 184 / 20%);
+  box-shadow: 0 12px 40px rgb(0 0 0 / 25%);
+}
+
+/* Better select appearance */
+.hero-glass select {
+  color-scheme: light;
+}
+
+.dark .hero-glass select {
+  color-scheme: dark;
+}
+
+.hero-glass select option {
+  background: var(--app-surface);
+  color: var(--app-text);
+}
+
+/* Mobile image positioning */
+@media (max-width: 640px) {
+  .hero-image-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgb(15 23 42 / 80%),
+        rgb(15 23 42 / 45%)
+      ),
+      linear-gradient(
+        0deg,
+        rgb(15 23 42 / 55%),
+        transparent 80%
+      );
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .hero-glass,
+  .hero-image-overlay {
+    transition: none;
+  }
+}

@@ -1,0 +1,32 @@
+
+.about-glass-card {
+  background: color-mix(
+    in srgb,
+    var(--app-surface) 88%,
+    transparent
+  );
+
+  border: 1px solid var(--app-border);
+
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+
+  box-shadow: 0 16px 45px rgb(15 23 42 / 14%);
+}
+
+.dark .about-glass-card {
+  background: color-mix(
+    in srgb,
+    var(--app-surface) 85%,
+    transparent
+  );
+
+  border-color: rgb(148 163 184 / 20%);
+  box-shadow: 0 16px 45px rgb(0 0 0 / 25%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-glass-card {
+    transition: none;
+  }
+}
